@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "tokyo.shisui.directconnectreset.mixin",
+  "package": "osadsakana.directconnectreset.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": ["DirectJoinServerScreenMixin"],
   "injectors": {
