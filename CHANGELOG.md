@@ -5,6 +5,11 @@
 フォーマットは [Keep a Changelog](https://keepachangelog.com/ja/1.1.0/) に準拠し、
 バージョニングは [Semantic Versioning](https://semver.org/lang/ja/) に従います。
 
+## [1.0.2] - 2026-10-03
+
+### Fixed
+- v1.0.1 でボタンのラベルが翻訳キーのまま表示される不具合を修正。言語ファイルの読み込みに Fabric API（fabric-resource-loader）が必要なため、Fabric API への依存を復活（`fabric.mod.json` にも `fabric-api` を明記）。
+
 ## [1.0.1] - 2026-10-03
 
 ### Added
