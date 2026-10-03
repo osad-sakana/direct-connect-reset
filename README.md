@@ -33,7 +33,7 @@
 ## 📦 動作要件
 
 - Minecraft **26.2**
-- Fabric Loader **0.19.5** 以上 + Fabric API
+- Fabric Loader **0.19.5** 以上
 - JDK **25**（ソースからビルドする場合）
 
 ---
