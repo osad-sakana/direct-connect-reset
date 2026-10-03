@@ -5,6 +5,15 @@
 フォーマットは [Keep a Changelog](https://keepachangelog.com/ja/1.1.0/) に準拠し、
 バージョニングは [Semantic Versioning](https://semver.org/lang/ja/) に従います。
 
+## [1.0.1] - 2026-10-03
+
+### Added
+- MOD アイコンを追加。
+
+### Changed
+- 使用していなかった Fabric API への依存をビルドと動作要件から削除（Fabric Loader のみで動作）。
+- CI の `actions/setup-java` を v5 に更新。
+
 ## [1.0.0] - 2026-10-03
 
 初回リリース。Minecraft 26.2 / Fabric Loader 0.19.5 対応。
