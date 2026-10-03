@@ -7,6 +7,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -18,6 +19,9 @@ public abstract class DirectJoinServerScreenMixin extends Screen {
 
     @Shadow
     private EditBox ipEdit;
+
+    @Unique
+    private Button directConnectReset$resetButton;
 
     protected DirectJoinServerScreenMixin(Component title) {
         super(title);
@@ -38,11 +42,24 @@ public abstract class DirectJoinServerScreenMixin extends Screen {
                     button -> this.ipEdit.setValue(this.minecraft.keyboardHandler.getClipboard()))
                 .bounds(pasteX, buttonY, buttonWidth, BUTTON_HEIGHT)
                 .build());
-        this.addRenderableWidget(
+        this.directConnectReset$resetButton = this.addRenderableWidget(
             Button.builder(
                     Component.translatable("direct_connect_reset.button.reset"),
                     button -> this.ipEdit.setValue(""))
                 .bounds(resetX, buttonY, buttonWidth, BUTTON_HEIGHT)
                 .build());
+        this.directConnectReset$updateResetButton();
+    }
+
+    @Inject(method = "updateSelectButtonStatus", at = @At("RETURN"))
+    private void directConnectReset$onValueChanged(CallbackInfo ci) {
+        this.directConnectReset$updateResetButton();
+    }
+
+    @Unique
+    private void directConnectReset$updateResetButton() {
+        if (this.directConnectReset$resetButton != null) {
+            this.directConnectReset$resetButton.active = !this.ipEdit.getValue().isEmpty();
+        }
     }
 }
