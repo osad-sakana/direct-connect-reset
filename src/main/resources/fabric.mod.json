@@ -11,6 +11,7 @@
     "issues": "https://github.com/osad-sakana/direct-connect-reset/issues"
   },
   "license": "${mod_license}",
+  "icon": "assets/direct_connect_reset/icon.png",
   "environment": "client",
   "mixins": [
     "${mod_id}.mixins.json"

@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="icon.png" width="128" alt="Direct Connect Reset icon">
+
 # Direct Connect Reset
 
 **ダイレクト接続画面を常に空欄で開き、貼り付け / リセットボタンを追加する、クライアントサイド専用 MOD**
@@ -8,6 +10,8 @@
 [![Fabric](https://img.shields.io/badge/Fabric_Loader-0.19.5-DBB69B)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-25-007396)](https://adoptium.net/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+
+![スクリーンショット](screenshot.png)
 
 </div>
 
