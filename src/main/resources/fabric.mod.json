@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "direct_connect_reset",
+  "version": "${version}",
+  "name": "Direct Connect Reset",
+  "description": "ダイレクト接続画面の入力欄を常に空欄で開き、貼り付け/リセットボタンを追加します。",
+  "authors": ["Yu Osada"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["direct_connect_reset.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25"
+  }
+}

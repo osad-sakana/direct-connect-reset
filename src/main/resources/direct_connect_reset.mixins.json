@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.example.directconnectreset.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["DirectJoinServerScreenMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
