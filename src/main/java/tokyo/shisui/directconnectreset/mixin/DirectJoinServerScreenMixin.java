@@ -1,4 +1,4 @@
-package com.example.directconnectreset.mixin;
+package tokyo.shisui.directconnectreset.mixin;
 
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
