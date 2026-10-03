@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Direct Connect Reset",
   "description": "ダイレクト接続画面の入力欄を常に空欄で開き、貼り付け/リセットボタンを追加します。",
-  "authors": ["Yu Osada"],
+  "authors": ["osadsakana"],
   "license": "MIT",
   "environment": "client",
   "mixins": ["direct_connect_reset.mixins.json"],
